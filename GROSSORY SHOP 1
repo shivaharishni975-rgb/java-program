@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class PriceList 
+{
+    public static void main(String[] args) 
+    {
+        Scanner sc = new Scanner(System.in);
+        int a4sheet = sc.nextInt();
+        int pen = sc.nextInt();
+        int pencil = sc.nextInt();
+        int eraser = sc.nextInt();
+        System.out.println("Items Details");
+        System.out.println("A4sheet:" + a4sheet);
+        System.out.println("Pen:" + pen);
+        System.out.println("Pencil:" + pencil);
+        System.out.println("Eraser:" + eraser);
+    }
+}
