@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class MovieBill 
+{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+        int pizzas = sc.nextInt();
+        int puffs = sc.nextInt();
+        int cooldrinks = sc.nextInt();
+        int pizzaPrice = 100;
+        int puffPrice = 20;
+        int cooldrinkPrice = 10;
+        int total = (pizzas * pizzaPrice) + (puffs * puffPrice) + (cooldrinks * cooldrinkPrice);
+        System.out.println("Bill Details");
+        System.out.println("No of pizzas:" + pizzas);
+        System.out.println("No of puffs:" + puffs);
+        System.out.println("No of cooldrinks:" + cooldrinks);
+        System.out.println("Total price=" + total);
+        System.out.println("ENJOY THE SHOW!!!");
+    }
+}
