@@ -1,0 +1,27 @@
+mport java.util.Scanner;
+
+public class GrossSalary 
+    {
+    public static double calculateGrossSalary(double basicSalary) {
+        double hra, da, gross;
+        
+        if (basicSalary < 15000) {
+            hra = 0.15 * basicSalary;
+            da = 0.90 * basicSalary;
+        } else {
+            hra = 5000;
+            da = 0.98 * basicSalary;
+        }
+        
+        gross = basicSalary + hra + da;
+        return gross;
+    }
+    
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        double basicSalary = sc.nextDouble();
+        
+        double grossSalary = calculateGrossSalary(basicSalary);
+        System.out.printf("%.2f", grossSalary);
+    }
+}
