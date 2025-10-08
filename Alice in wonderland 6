@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class Main 
+{
+    public static void main(String[] args) 
+    {
+        Scanner sc = new Scanner(System.in);
+        int number = sc.nextInt();
+        int firstDigit = number / 10;
+        int secondDigit = number % 10;
+        int sum = firstDigit + secondDigit;
+        System.out.println("Bird said:" + number);
+        System.out.println("Alice must go in path-" + sum);
+    }
+}
